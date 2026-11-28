@@ -1,0 +1,37 @@
+Source: mate-clipboard
+Section: utils
+Priority: optional
+Maintainer: Menta Linux <packages@menta-linux.invalid>
+Build-Depends: debhelper-compat (= 13),
+               gettext,
+               libgdk-pixbuf-2.0-dev,
+               libglib2.0-dev (>= 2.66),
+               libgtk-3-dev (>= 3.22),
+               libgtk-layer-shell-dev (>= 0.6),
+               libmate-panel-applet-dev (>= 1.29.2),
+               libsecret-1-dev (>= 0.20),
+               libsodium-dev (>= 1.0.18),
+               libsqlite3-dev (>= 3.30),
+               libwayland-bin,
+               libwayland-dev,
+               libx11-dev,
+               libxtst-dev,
+               meson (>= 0.59.0),
+               pkgconf,
+               valac,
+               wayland-protocols (>= 1.39),
+Standards-Version: 4.7.2
+Homepage: https://github.com/KeremSoke/mate-clipboard
+Vcs-Git: https://github.com/menta-linux/pkg-mate-clipboard.git
+
+Package: mate-clipboard
+Architecture: any
+Depends: mate-panel,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: clipboard manager applet for the MATE panel
+ Clipman keeps an encrypted history of clipboard entries and shows it in a
+ popup from the MATE panel. It supports X11 and, through the wlr and ext
+ data-control protocols with gtk-layer-shell, Wayland sessions.
+ .
+ The applet is loaded in-process by mate-panel.

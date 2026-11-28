@@ -1,0 +1,6 @@
+mate-clipboard (2.0.1-1menta1) unstable; urgency=medium
+
+  * Menta Linux build of mate-clipboard 2.0.1 (upstream tag v2.0.1) with
+    X11 and Wayland support; the panel applet is loaded in-process.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sat, 14 Nov 2026 17:49:37 -0700
